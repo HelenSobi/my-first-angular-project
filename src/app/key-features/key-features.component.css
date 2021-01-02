@@ -1,0 +1,103 @@
+a,
+a:visited,
+a:hover {
+  color: #1976d2;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #125699;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.card {
+  border-radius: 4px;
+  border: 1px solid #eee;
+  background-color: #fafafa;
+  height: 300px;
+  width:100%;
+  margin: 0 8px 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  line-height: 24px;
+}
+
+.card-container .card:not(:last-child) {
+  margin-right: 0;
+}
+
+.card-container .card{
+  cursor: pointer;
+}
+
+.card-container .card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+}
+.card-container .card:hover .key-feature-ellipse-bg{
+    background-color: #039BE5;
+}
+.card-container .card:hover .key-feature-icon-technical{
+    background-image: url("../../assets/images/technical_security_hover.png");
+}
+.key-feature-icon-technical{
+    background-image: url("../../assets/images/technical_security.png");  
+}
+.card-container .card:hover .key-feature-icon-security{
+    background-image: url("../../assets/images/data_security_hover.png");
+}
+.key-feature-icon-security{
+    background-image: url("../../assets/images/data_security.png");  
+}
+.card-container .card:hover .key-feature-icon-prevention{
+    background-image: url("../../assets/images/identity_theft_hover.png");
+}
+.key-feature-icon-prevention{
+    background-image: url("../../assets/images/identity_theft.png");  
+}
+.key-feature-heading{
+    color:#212121;
+}
+.key-feature-ellipse-bg{
+    width: 50px;
+    display: table;
+    margin: 0 auto;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #EEEEEE;
+}
+
+.key-feature-icon-common{
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 30px;
+    width: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.key-feature-icon-prevention-common{
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 37px;
+    width: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.key-featue-title{
+    color:#424242;
+    text-align:center;
+}
+.text-color{
+    color:#424242;
+    font-size:14px;
+}
